@@ -3,7 +3,7 @@ import { FaDownload } from "react-icons/fa";
 
 function Summary() {
   return (
-    <div className="bg-[#212529] flex flex-col w-[82vw] h-[screen]">
+    <div className="bg-[#212529] flex flex-col h-[screen]">
       <div className="relative">
         <h1 className="text-9xl font-bold flex justify-center mt-[80px] mb-[60px] text-[#6c757d] opacity-20">
           SUMMARY
@@ -181,7 +181,7 @@ function Summary() {
           </div>
         </div>
       </div>
-      <button className="btn w-[220px] h-[55px] bg-[transparent] border-[#6c757d] rounded-full hover:bg-[#6c757d] hover:text-white m-auto mt-10 mb-6">
+      <button className="btn w-[220px] h-[55px] bg-[transparent] border-[#6c757d] rounded-full hover:bg-[#6c757d] hover:text-white m-auto mt-10 mb-16">
         <a href={cv} download className="text-white">
           Download CV
         </a>

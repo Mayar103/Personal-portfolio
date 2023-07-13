@@ -3,7 +3,7 @@ import cv from "../assets/cv.pdf";
 function About() {
   return (
     <>
-      <div className="bg-[#212529] flex flex-col w-[82vw] h-[screen]">
+      <div className="bg-[#212529] flex flex-col h-[screen]">
         <div className="relative">
           <h1 className="text-9xl font-bold flex justify-center mt-[80px] mb-[60px] text-[#6c757d] opacity-20">
             ABOUT ME

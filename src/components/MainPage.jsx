@@ -1,20 +1,21 @@
-import backgroundImg from "../assets/bg.jpg";
 import About from "../sections/About";
+import Contact from "../sections/Contact";
+import CopyRights from "../sections/CopyRights";
+import Portfolio from "../sections/Portfolio";
 import Services from "../sections/Services";
 import Summary from "../sections/Summary";
+import Welcome from "../sections/Welcome";
 
 function MainPage() {
   return (
     <>
-      {/* <div
-        className="h-[screen] w-[82vw]"
-        style={{ backgroundImage: `url(${backgroundImg})` }}
-      >
-        based in Ismailia, Egypt
-      </div> */}
-      <About/>
-      <Services/>
-      <Summary/>
+      <Welcome />
+      <About />
+      <Services />
+      <Summary />
+      <Portfolio />
+      <Contact />
+      <CopyRights />
     </>
   );
 }

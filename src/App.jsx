@@ -5,10 +5,10 @@ function App() {
   return (
     <>
       <div className="flex">
-        <div>
+        <div className="w-[17vw] fixed">
           <SideMenu />
         </div>
-        <div>
+        <div className="w-[83vw] ml-[17vw]">
           <MainPage />
         </div>
       </div>
