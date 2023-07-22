@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import backgroundImg from "../assets/bg.jpg";
 import { IoIosArrowDown } from "react-icons/io";
+import { Link } from "react-scroll";
 
 function Welcome() {
   const [texts, setTexts] = useState([
@@ -41,25 +41,6 @@ function Welcome() {
   }, [displayText, isRemoving, currentTextIndex, texts]);
 
   return (
-    // <div className="h-[100vh] flex flex-col items-center justify-center">
-    //   <img src={backgroundImg} className="opacity-20 h-[100vh] w-[100%]" />
-    //   <div className="absolute text-center">
-    //     <h3 className="text-white font-semibold text-3xl mb-8">Welcome</h3>
-    //     <h1 className="text-white font-bold text-5xl mb-8">
-    //       I'm {displayText}
-    //     </h1>
-    //     <h2 className="text-[#dee3e4] text-2xl mb-8">
-    //       based in Ismailia, Egypt.
-    //     </h2>
-
-    //     <button className="btn border-[#20c997] text-[#20c997] rounded-full w-[135px] hover:bg-[#20c997] hover:text-white">
-    //       Hire Me
-    //     </button>
-    //   </div>
-    //   <div className="cursor-pointer ">
-    //     <IoIosArrowDown className="animate-bounce text-3xl absolute bottom-3 hover:text-[#20c997]" />
-    //   </div>
-    // </div>
     <div
       className="hero min-h-screen"
       style={{
@@ -77,13 +58,17 @@ function Welcome() {
           <h2 className="text-[#dee3e4] text-2xl mb-8">
             based in Ismailia, Egypt.
           </h2>
-          <button className="btn border-[#20c997] bg-transparent text-[#20c997] rounded-full w-[140px] hover:bg-[#20c997] hover:text-white">
-            Hire Me
-          </button>
+          <Link to="contact" smooth="true" duration={600}>
+            <button className="btn border-[#20c997] bg-transparent text-[#20c997] rounded-full w-[140px] hover:bg-[#20c997] hover:text-white">
+              Hire Me
+            </button>
+          </Link>
         </div>
       </div>
       <div className="cursor-pointer ">
-        <IoIosArrowDown className="animate-bounce text-3xl absolute bottom-3 hover:text-[#20c997]" />
+        <Link to="about" smooth="true" duration={500}>
+          <IoIosArrowDown className="animate-bounce text-3xl absolute bottom-3 hover:text-[#20c997]" />
+        </Link>
       </div>
     </div>
   );

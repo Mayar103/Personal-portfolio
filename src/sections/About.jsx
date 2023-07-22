@@ -1,4 +1,4 @@
-import cv from "../assets/cv.pdf";
+import cv from "../../public/assets/cv.pdf";
 
 function About() {
   return (
@@ -19,15 +19,16 @@ function About() {
               Developer
             </h2>
             <p className="mb-[18px] leading-8 text-lg">
-              I help you build brand for your business at an affordable price.
-              Thousands of clients have procured exceptional results while
-              working with our dedicated team. when an unknown printer took a
-              galley of type and scrambled it to make a type specimen book.
+              I can help you build a website for your business at an affordable
+              price. You can choose the functionalities you want to apply in
+              your project. It's fine if you have a specific template to be
+              implemented in the progict. when an unknown printer took a galley
+              of type and scrambled it to make a type specimen book.
             </p>
             <p className="leading-8 text-lg">
-              Delivering work within time and budget which meets client’s
-              requirements is our moto. Lorem Ipsum has been the industry's
-              standard dummy text ever when an unknown printer took a galley.
+              I can also help you build UI design that reflects visually
+              appealing interfaces in the field you choose, having priviledge of
+              new techniques and trendy looking websites.
             </p>
           </div>
           <div className="w-[20vw]">

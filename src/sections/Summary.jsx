@@ -1,7 +1,76 @@
-import cv from "../assets/cv.pdf";
+import cv from "../../public/assets/cv.pdf";
 import { FaDownload } from "react-icons/fa";
 
 function Summary() {
+  const education = [
+    {
+      id: 1,
+      study: "Web Development & UI",
+      uni: "ITI - Ismailia branch",
+      year: "2022-2023",
+      content:
+        "Web and UI Development 9 months professional diploma, ITI, Ismailia Branch, Ministry of Communications and Information Technology.",
+    },
+    {
+      id: 2,
+      study: "Software Fundamentals",
+      uni: "ITI - Fayed branch",
+      year: "2022",
+      content:
+        "Software Fundamentals, Intensive Training Program, ITI, Fayed Branch, Ministry of Communications and Information Technology.",
+    },
+    {
+      id: 3,
+      study: "Alsun",
+      uni: "Suez Canal University",
+      year: "2017-2021",
+      content:
+        "BSc of Languages and Literature, English Dept., Faculty of Alsun, Suez Canal University.",
+    },
+  ];
+  const progress = [
+    {
+      id: 1,
+      name: "Web Design",
+      value: "75",
+    },
+    {
+      id: 2,
+      name: "JavaScript",
+      value: "90",
+    },
+    {
+      id: 3,
+      name: "HTML/CSS",
+      value: "98",
+    },
+    {
+      id: 4,
+      name: "UI/UX",
+      value: "88",
+    },
+    {
+      id: 5,
+      name: "React",
+      value: "85",
+    },
+    {
+      id: 6,
+      name: "Angular",
+      value: "90",
+    },
+    {
+      id: 7,
+      name: "Tailwind",
+      value: "90",
+    },
+    {
+      id: 8,
+      name: "MaterialUI",
+      value: "96",
+    },
+  ];
+
   return (
     <div className="bg-[#212529] flex flex-col h-[screen]">
       <div className="relative">
@@ -15,169 +84,65 @@ function Summary() {
       <div className="flex justify-center gap-8">
         <div className="mb-8">
           <h2 className="text-white text-2xl font-bold mb-6">My Education</h2>
-          <div className="w-[530px] h-[210px] bg-[#111418] flex flex-col justify-center rounded-[8px]">
-            <p className="text-white bg-[#20c997] w-[90px] h-[25px] flex justify-center ml-5 rounded-[6px]">
-              2017-2021
-            </p>
-            <h2 className="mb-2 mt-2 w-[fit-content] text-white text-2xl ml-5 font-semibold">
-              Computer Science
-            </h2>
-            <h4 className="mb-3 text-[#20c997] w-[fit-content] ml-5 ">
-              International University
-            </h4>
-            <p className="w-[500px] ml-5">
-              Lisque persius interesset his et, in quot quidam persequeris vim,
-              ad mea essent possim iriure.
-            </p>
-          </div>
-          <div className="w-[530px] h-[210px] bg-[#111418] flex flex-col justify-center rounded-[8px] mt-6">
-            <p className="text-white bg-[#20c997] w-[90px] h-[25px] flex justify-center ml-5 rounded-[6px]">
-              2017-2021
-            </p>
-            <h2 className="mb-2 mt-2 w-[fit-content] text-white text-2xl ml-5 font-semibold">
-              Computer Science
-            </h2>
-            <h4 className="mb-3 text-[#20c997] w-[fit-content] ml-5 ">
-              International University
-            </h4>
-            <p className="w-[500px] ml-5">
-              Lisque persius interesset his et, in quot quidam persequeris vim,
-              ad mea essent possim iriure.
-            </p>
-          </div>
-          <div className="w-[530px] h-[210px] bg-[#111418] flex flex-col justify-center rounded-[8px] mt-6">
-            <p className="text-white bg-[#20c997] w-[90px] h-[25px] flex justify-center ml-5 rounded-[6px]">
-              2017-2021
-            </p>
-            <h2 className="mb-2 mt-2 w-[fit-content] text-white text-2xl ml-5 font-semibold">
-              Computer Science
-            </h2>
-            <h4 className="mb-3 text-[#20c997] w-[fit-content] ml-5 ">
-              International University
-            </h4>
-            <p className="w-[500px] ml-5">
-              Lisque persius interesset his et, in quot quidam persequeris vim,
-              ad mea essent possim iriure.
-            </p>
-          </div>
+          {education.map((edu) => (
+            <div
+              key={edu.id}
+              className="w-[530px] h-[210px] bg-[#111418] flex flex-col justify-center rounded-[8px] mb-[25px]"
+            >
+              <p className="text-white bg-[#20c997] w-[90px] h-[25px] flex justify-center ml-5 rounded-[6px]">
+                {edu.year}
+              </p>
+              <h2 className="mb-2 mt-2 w-[fit-content] text-white text-2xl ml-5 font-semibold">
+                {edu.study}
+              </h2>
+              <h4 className="mb-3 text-[#20c997] w-[fit-content] ml-5 ">
+                {edu.uni}
+              </h4>
+              <p className="w-[500px] ml-5">{edu.content}</p>
+            </div>
+          ))}
         </div>
         <div className="mb-8">
-          <h2 className="text-white text-2xl font-bold mb-6">My Exprience</h2>
-          <div className="w-[530px] h-[210px] bg-[#111418] flex flex-col justify-center rounded-[8px]">
-            <p className="text-white bg-[#20c997] w-[90px] h-[25px] flex justify-center ml-5 rounded-[6px]">
-              2017-2021
-            </p>
-            <h2 className="mb-2 mt-2 w-[fit-content] text-white text-2xl ml-5 font-semibold">
-              Computer Science
-            </h2>
-            <h4 className="mb-3 text-[#20c997] w-[fit-content] ml-5 ">
-              International University
-            </h4>
-            <p className="w-[500px] ml-5">
-              Lisque persius interesset his et, in quot quidam persequeris vim,
-              ad mea essent possim iriure.
-            </p>
-          </div>
-          <div className="w-[530px] h-[210px] bg-[#111418] flex flex-col justify-center rounded-[8px] mt-6">
-            <p className="text-white bg-[#20c997] w-[90px] h-[25px] flex justify-center ml-5 rounded-[6px]">
-              2017-2021
-            </p>
-            <h2 className="mb-2 mt-2 w-[fit-content] text-white text-2xl ml-5 font-semibold">
-              Computer Science
-            </h2>
-            <h4 className="mb-3 text-[#20c997] w-[fit-content] ml-5 ">
-              International University
-            </h4>
-            <p className="w-[500px] ml-5">
-              Lisque persius interesset his et, in quot quidam persequeris vim,
-              ad mea essent possim iriure.
-            </p>
-          </div>
-          <div className="w-[530px] h-[210px] bg-[#111418] flex flex-col justify-center rounded-[8px] mt-6">
-            <p className="text-white bg-[#20c997] w-[90px] h-[25px] flex justify-center ml-5 rounded-[6px]">
-              2017-2021
-            </p>
-            <h2 className="mb-2 mt-2 w-[fit-content] text-white text-2xl ml-5 font-semibold">
-              Computer Science
-            </h2>
-            <h4 className="mb-3 text-[#20c997] w-[fit-content] ml-5 ">
-              International University
-            </h4>
-            <p className="w-[500px] ml-5">
-              Lisque persius interesset his et, in quot quidam persequeris vim,
-              ad mea essent possim iriure.
-            </p>
-          </div>
+          <h2 className="text-white text-2xl font-bold mb-6">My Education</h2>
+          {education.map((edu) => (
+            <div
+              key={edu.id}
+              className="w-[530px] h-[210px] bg-[#111418] flex flex-col justify-center rounded-[8px] mb-[25px]"
+            >
+              <p className="text-white bg-[#20c997] w-[90px] h-[25px] flex justify-center ml-5 rounded-[6px]">
+                {edu.year}
+              </p>
+              <h2 className="mb-2 mt-2 w-[fit-content] text-white text-2xl ml-5 font-semibold">
+                {edu.study}
+              </h2>
+              <h4 className="mb-3 text-[#20c997] w-[fit-content] ml-5 ">
+                {edu.uni}
+              </h4>
+              <p className="w-[500px] ml-5">{edu.content}</p>
+            </div>
+          ))}
         </div>
       </div>
       <div className="flex justify-center mt-4">
         <div className="flex flex-col items-start">
           <h2 className="text-white text-2xl font-bold mb-8">My Skills</h2>
 
-          <div className="flex justify-center gap-[30px]">
-            <div className="flex flex-col">
-              <div className="flex items-center justify-between mb-2">
-                <h3 className="text-white text-lg font-semibold ">
-                  Web Design
-                </h3>
-                <h3 className="text-white text-medium ">60%</h3>
+          <div className="grid grid-cols-2 gap-[30px]">
+            {progress.map((prog) => (
+              <div key={prog.id}>
+                <div className="flex items-center justify-between">
+                  <h3 className="text-white text-lg font-semibold">
+                    {prog.name}
+                  </h3>
+                  <h3 className="text-white text-medium">{prog.value}%</h3>
+                </div>
+                <progress
+                  className="progress progress-success w-[530px]"
+                  value={prog.value}
+                  max="100"
+                ></progress>
               </div>
-
-              <progress
-                className="progress progress-success w-[530px] mb-6"
-                value="60"
-                max="100"
-              ></progress>
-              <div className="flex items-center justify-between mb-2">
-                <h3 className="text-white text-lg font-semibold ">
-                  JavaScript
-                </h3>
-                <h3 className="text-white text-medium ">80%</h3>
-              </div>
-              <progress
-                className="progress progress-success w-[530px] mb-6"
-                value="80"
-                max="100"
-              ></progress>
-              <div className="flex items-center justify-between mb-2">
-                <h3 className="text-white text-lg font-semibold ">HTML/CSS</h3>
-                <h3 className="text-white text-medium ">96%</h3>
-              </div>
-              <progress
-                className="progress progress-success w-[530px] mb-6"
-                value="96"
-                max="100"
-              ></progress>
-            </div>
-            <div className="flex flex-col">
-              <div className="flex items-center justify-between mb-2">
-                <h3 className="text-white text-lg font-semibold ">React JS</h3>
-                <h3 className="text-white text-medium ">80%</h3>
-              </div>
-              <progress
-                className="progress progress-success w-[530px] mb-6"
-                value="80"
-                max="100"
-              ></progress>
-              <div className="flex items-center justify-between mb-2">
-                <h3 className="text-white text-lg font-semibold ">Bootstrap</h3>
-                <h3 className="text-white text-medium ">70%</h3>
-              </div>
-              <progress
-                className="progress progress-success w-[530px] mb-6"
-                value="70"
-                max="100"
-              ></progress>
-              <div className="flex items-center justify-between mb-2">
-                <h3 className="text-white text-lg font-semibold ">Tailwind</h3>
-                <h3 className="text-white text-medium ">80%</h3>
-              </div>
-              <progress
-                className="progress progress-success w-[530px] mb-6"
-                value="80"
-                max="100"
-              ></progress>
-            </div>
+            ))}
           </div>
         </div>
       </div>

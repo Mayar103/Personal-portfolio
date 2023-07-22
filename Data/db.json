@@ -1,0 +1,22 @@
+{
+  "tabs": [
+    {
+      "id": 1,
+      "title": "Tab 1",
+      "content": "Content for Tab 1",
+      "img": "../src/assets/first.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Tab 2",
+      "content": "Content for Tab 2",
+      "img": "../src/assets/second.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Tab 3",
+      "content": "Content for Tab 3",
+      "img": "../src/assets/second.jpg"
+    }
+  ]
+}

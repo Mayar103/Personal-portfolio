@@ -1,48 +1,164 @@
-import { NavLink } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-scroll";
+import { BsLinkedin } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
 
-function SideMenu() {
+const SideMenu = () => {
+  const [activeSection, setActiveSection] = useState(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    const sections = document.querySelectorAll("section");
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll("section");
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop - 100;
+        const sectionBottom = sectionTop + section.offsetHeight;
+        const scrollPosition = window.pageYOffset;
+
+        if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+          setActiveSection(section.id);
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <div className="h-screen bg-[#121212] flex flex-col items-center">
         <div>
           <img
-            src="../src/assets/img.jpg"
-            className="rounded-full h-[125px] w-[125px] mt-[70px] mb-[18px]"
+            src="../public/assets/img.jpg"
+            className="rounded-full h-[135px] w-[135px] mt-[70px] mb-[18px]"
           />
-          <h1 className="text-white font-semibold text-[18px]">
-            Mayar Mohamed
-          </h1>
         </div>
-        <ul className="menu flex flex-col gap-[8px] mt-[40px]">
-          <li className="w-[30px]">
-            <a className="font-semibold text-[16px] hover:text-[#20c997] hover:bg-transparent focus:text-[#20c997]">
+        <h1 className="text-white font-semibold text-[20px]">Mayar Mohamed</h1>
+        <ul className="menu flex flex-col gap-[8px] mt-[60px] mr-[70px]">
+          <li
+            className={`w-[30px] ${
+              activeSection === "home" ? "text-[#20c997]" : ""
+            }`}
+          >
+            <Link
+              to="home"
+              smooth={true}
+              duration={500}
+              className="font-semibold text-[18px] hover:text-[#20c997] hover:bg-transparent"
+            >
               Home
-            </a>
+            </Link>
           </li>
-          <li>
-            <a className="font-semibold text-[16px] hover:text-[#20c997] hover:bg-transparent">
-              About me
-            </a>
+          <li
+            className={`w-[30px] ${
+              activeSection === "about" ? "text-[#20c997]" : ""
+            }`}
+          >
+            <Link
+              to="about"
+              smooth={true}
+              duration={500}
+              className="font-semibold text-[18px] hover:text-[#20c997] hover:bg-transparent"
+            >
+              About
+            </Link>
           </li>
-          <li>
-            <a className=" font-semibold text-[16px] hover:text-[#20c997] hover:bg-transparent">
+          <li
+            className={`w-[30px] ${
+              activeSection === "services" ? "text-[#20c997]" : ""
+            }`}
+          >
+            <Link
+              to="services"
+              smooth={true}
+              duration={500}
+              className="font-semibold text-[18px] hover:text-[#20c997] hover:bg-transparent"
+            >
               What I do
-            </a>
+            </Link>
           </li>
-          <li>
-            <a className="font-semibold text-[16px] hover:text-[#20c997] hover:bg-transparent">
+          <li
+            className={`w-[30px] ${
+              activeSection === "summary" ? "text-[#20c997]" : ""
+            }`}
+          >
+            <Link
+              to="summary"
+              smooth={true}
+              duration={500}
+              className="font-semibold text-[18px] hover:text-[#20c997] hover:bg-transparent"
+            >
               Resume
-            </a>
+            </Link>
           </li>
-          <li>
-            <a className="font-semibold text-[16px] hover:text-[#20c997] hover:bg-transparent">
+          <li
+            className={`w-[30px] ${
+              activeSection === "portfolio" ? "text-[#20c997]" : ""
+            }`}
+          >
+            <Link
+              to="portfolio"
+              smooth={true}
+              duration={500}
+              className="font-semibold text-[18px] hover:text-[#20c997] hover:bg-transparent"
+            >
               Portfolio
-            </a>
+            </Link>
+          </li>
+          <li
+            className={`w-[30px] ${
+              activeSection === "contact" ? "text-[#20c997]" : ""
+            }`}
+          >
+            <Link
+              to="contact"
+              smooth={true}
+              duration={500}
+              className="font-semibold text-[18px] hover:text-[#20c997] hover:bg-transparent"
+            >
+              Contact
+            </Link>
           </li>
         </ul>
+        <div className="flex gap-4 mt-32">
+          <a href="https://github.com/Mayar103" target="_blank">
+            <BsGithub className="text-[#20c997] text-lg cursor-pointer" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/mayar-mohamed-362b99168/"
+            target="_blank"
+          >
+            <BsLinkedin className="text-[#20c997] text-lg cursor-pointer" />
+          </a>
+        </div>
       </div>
     </>
   );
-}
+};
 
 export default SideMenu;
