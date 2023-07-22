@@ -5,8 +5,8 @@ import { Link } from "react-scroll";
 function Welcome() {
   const [texts, setTexts] = useState([
     "Mayar Mohamed",
-    "a Web Developer",
-    "a UI/UX Developer",
+    "a Frontend Developer",
+    "a UI/UX Designer",
   ]);
 
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
@@ -50,7 +50,7 @@ function Welcome() {
     >
       <div className="hero-overlay bg-opacity-70"></div>
       <div className="hero-content text-center text-neutral-content">
-        <div className="max-w-lg">
+        <div className="max-w-xl">
           <h3 className="text-white font-semibold text-3xl mb-8">Welcome</h3>
           <h1 className="text-white font-bold text-5xl mb-8">
             I'm {displayText}

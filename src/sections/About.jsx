@@ -1,4 +1,4 @@
-import cv from "../../public/assets/cv.pdf";
+import cv from "../../public/assets/Mayar Mohamed Meshabet.pdf";
 
 function About() {
   return (
@@ -22,8 +22,8 @@ function About() {
               I can help you build a website for your business at an affordable
               price. You can choose the functionalities you want to apply in
               your project. It's fine if you have a specific template to be
-              implemented in the progict. when an unknown printer took a galley
-              of type and scrambled it to make a type specimen book.
+              implemented in the progict. You can also choose major colors and
+              images of the whole website to fit your major point.
             </p>
             <p className="leading-8 text-lg">
               I can also help you build UI design that reflects visually

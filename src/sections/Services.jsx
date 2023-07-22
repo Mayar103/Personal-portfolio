@@ -1,6 +1,7 @@
 import { FaPencilRuler } from "react-icons/fa";
-import { FaPalette } from "react-icons/fa";
 import { CgScreen } from "react-icons/cg";
+import { TbWritingSign } from "react-icons/tb";
+import { AiOutlineTranslation } from "react-icons/ai";
 
 function Services() {
   const services = [
@@ -8,29 +9,29 @@ function Services() {
       id: 1,
       name: "UI/UX",
       description:
-        "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+        "It involves designing layouts, color schemes, icons, typography, buttons, and other visual elements to create the look and feel of the product. ",
       icon: <FaPencilRuler />,
     },
     {
       id: 2,
       name: "Web development",
       description:
-        "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+        "It involves technical skills to build interactive and functional online experiences through various programming languages and frameworks. ",
       icon: <CgScreen />,
     },
     {
       id: 3,
-      name: "UI/UX",
+      name: "Writing",
       description:
-        "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      icon: <FaPalette />,
+        "Content writers are skilled in crafting engaging, informative, and persuasive content that resonates with the target audience and fulfills specific objectives.",
+      icon: <TbWritingSign />,
     },
     {
       id: 4,
-      name: "UI/UX",
+      name: "Translation",
       description:
-        "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      icon: <FaPalette />,
+        "Translation allows us to bridge the gap between different linguistic and cultural communities, enabling effective communication across borders.",
+      icon: <AiOutlineTranslation />,
     },
   ];
   return (
@@ -44,7 +45,7 @@ function Services() {
             What I Do?
           </h2>
         </div>
-        <div className="flex justify-evenly mt-[50px]">
+        <div className="flex justify-evenly mt-[40px]">
           <div className="grid grid-rows-2 grid-flow-col">
             {services.map((service) => (
               <div key={service.id} className="w-[500px] flex mb-14">

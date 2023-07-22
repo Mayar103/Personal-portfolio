@@ -3,7 +3,6 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { BsGithub } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
-import axios from "axios";
 
 function Contact() {
   const [name, setName] = useState("");
@@ -63,7 +62,7 @@ function Contact() {
           <div className="w-[170px] text-white">
             <h1 className="text-xl font-semibold mb-3">ADDRESS</h1>
             <p className="leading-7 mb-6 font-xl text-[#dee3e4]">
-              4th Floor, Plot No.22, 145 Murphy Canyon Rd. San Diego CA 2028
+              Ismailia, Egypt
             </p>
           </div>
           <div>

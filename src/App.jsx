@@ -8,7 +8,6 @@ import Summary from "./sections/Summary";
 import Contact from "./sections/Contact";
 import CopyRights from "./sections/CopyRights";
 import { Element } from "react-scroll";
-import ContactForm from "./sections/Connect";
 
 function App() {
   return (
@@ -33,10 +32,9 @@ function App() {
           <Element name="portfolio">
             <Section id="portfolio" title={<Portfolio />} />
           </Element>
-          <Element name="contact">
+          {/* <Element name="contact">
             <Section id="contact" title={<Contact />} />
-            {/* <Section id="contact" title={<ContactForm />} /> */}
-          </Element>
+          </Element> */}
           <Element>
             <Section title={<CopyRights />} />
           </Element>

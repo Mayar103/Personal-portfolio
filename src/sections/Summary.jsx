@@ -1,4 +1,4 @@
-import cv from "../../public/assets/cv.pdf";
+import cv from "../../public/assets/Mayar Mohamed Meshabet.pdf";
 import { FaDownload } from "react-icons/fa";
 
 function Summary() {
@@ -103,7 +103,7 @@ function Summary() {
           ))}
         </div>
         <div className="mb-8">
-          <h2 className="text-white text-2xl font-bold mb-6">My Education</h2>
+          <h2 className="text-white text-2xl font-bold mb-6">My Experience</h2>
           {education.map((edu) => (
             <div
               key={edu.id}

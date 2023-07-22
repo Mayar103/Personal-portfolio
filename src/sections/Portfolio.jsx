@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { BsGithub } from "react-icons/bs";
+import {FiFigma} from "react-icons/fi"
 
 function Portfolio() {
   const [showModal, setShowModal] = useState(false);
@@ -103,18 +104,6 @@ function Portfolio() {
   const dataToRender =
     activeTab === 0 ? items : items.filter((item) => item.tab === activeTab);
 
-  // useEffect(() => {
-  //   axios
-  //     .get("http://localhost:3000/tabs")
-  //     .then((response) => {
-  //       setTabs(response.data);
-  //       setActiveTab(response.data[0]);
-  //     })
-  //     .catch((error) => {
-  //       console.log(error);
-  //     });
-  // }, []);
-
   const handleTabClick = (id) => {
     setActiveTab(id);
   };
@@ -123,13 +112,6 @@ function Portfolio() {
     setSelectedItem(item);
     setShowModal(true);
   };
-
-  {
-    /* You can open the modal using ID.showModal() method */
-  }
-  {
-    /* <button className="btn" onClick={()=>window.my_modal_3.showModal()}>open modal</button> */
-  }
 
   return (
     <div className="bg-[#343a40] flex flex-col h-[screen]">
@@ -212,12 +194,24 @@ function Portfolio() {
                   <span className="text-white">Time:</span> {selectedItem.time}
                 </p>
                 <div className="divider mt-1 mb-1"></div>
-                <p className="flex items-center gap-2">
-                  <span className="text-white">Github:</span>{" "}
-                  <a href={selectedItem.github} target="_blank">
-                    <BsGithub className="text-[#20c997] text-lg cursor-pointer" />
-                  </a>
-                </p>
+                <div className="flex items-center gap-2">
+                  {selectedItem.id === 6 ? (
+                    <div className="flex items-center gap-2">
+                      <span className="text-white">Figma:</span>{" "}
+                      <a href={selectedItem.figma} target="_blank">
+                        <FiFigma className="text-[#20c997] text-lg cursor-pointer" />
+                      </a>
+                    </div>
+                  ) : (
+                    <div className="flex items-center gap-2">
+                      {" "}
+                      <span className="text-white">Github:</span>{" "}
+                      <a href={selectedItem.github} target="_blank">
+                        <BsGithub className="text-[#20c997] text-lg cursor-pointer" />
+                      </a>
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
           </div>
