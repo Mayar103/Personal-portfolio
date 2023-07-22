@@ -1,4 +1,4 @@
-import cv from "../../public/assets/Mayar Mohamed Meshabet.pdf";
+import cv from "../../public/Images/Mayar Mohamed Meshabet.pdf";
 import { FaDownload } from "react-icons/fa";
 
 function Summary() {

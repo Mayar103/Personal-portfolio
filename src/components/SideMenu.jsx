@@ -55,7 +55,7 @@ const SideMenu = () => {
       <div className="h-screen bg-[#121212] flex flex-col items-center">
         <div>
           <img
-            src="../public/assets/pro.jpg"
+            src="Images/pro.jpg"
             className="rounded-full h-[135px] w-[135px] mt-[70px] mb-[18px]"
           />
         </div>

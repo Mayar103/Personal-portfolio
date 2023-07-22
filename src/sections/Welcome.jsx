@@ -58,11 +58,11 @@ function Welcome() {
           <h2 className="text-[#dee3e4] text-2xl mb-8">
             based in Ismailia, Egypt.
           </h2>
-          <Link to="contact" smooth="true" duration={600}>
+          <a href="mailto:mayarmohamed775@gmail.com">
             <button className="btn border-[#20c997] bg-transparent text-[#20c997] rounded-full w-[140px] hover:bg-[#20c997] hover:text-white">
               Hire Me
             </button>
-          </Link>
+          </a>
         </div>
       </div>
       <div className="cursor-pointer ">

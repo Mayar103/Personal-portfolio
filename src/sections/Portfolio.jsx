@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { BsGithub } from "react-icons/bs";
-import {FiFigma} from "react-icons/fi"
+import { FiFigma } from "react-icons/fi";
 
 function Portfolio() {
   const [showModal, setShowModal] = useState(false);
@@ -29,7 +29,7 @@ function Portfolio() {
     {
       id: 1,
       name: "Greentopia",
-      img: "../public/assets/greentopia.PNG",
+      img: "Images/greentopia.PNG",
       cat: "environmental",
       time: "March 2023",
       technologies: "HTML, CSS, React",
@@ -41,7 +41,7 @@ function Portfolio() {
     {
       id: 2,
       name: "Dawini",
-      img: "../public/assets/dawini.PNG",
+      img: "Images/dawini.PNG",
       cat: "medical",
       time: "Feb 2023",
       technologies: "HTML, Angular, SCSS",
@@ -53,7 +53,7 @@ function Portfolio() {
     {
       id: 3,
       name: "Yoga",
-      img: "../public/assets/yoga.PNG",
+      img: "Images/yoga.PNG",
       cat: "template",
       time: "April 2023",
       technologies: "HTML, React, Material UI",
@@ -64,7 +64,7 @@ function Portfolio() {
     {
       id: 4,
       name: "Furnival",
-      img: "../public/assets/Cap.PNG",
+      img: "Images/Cap.PNG",
       cat: "Furniture",
       time: "June 2023",
       technologies: "HTML, React, Material UI, TailwindCSS",
@@ -76,7 +76,7 @@ function Portfolio() {
     {
       id: 5,
       name: "Portfolio",
-      img: "../public/assets/portfolio.PNG",
+      img: "Images/portfolio.PNG",
       cat: "personal",
       time: "July 2023",
       technologies: "HTML, React, TailwindCSS",
@@ -88,7 +88,7 @@ function Portfolio() {
     {
       id: 6,
       name: "Furnival",
-      img: "../public/assets/f.PNG",
+      img: "Images/f.PNG",
       cat: "design",
       tab: 3,
       technologies: "Figma",
