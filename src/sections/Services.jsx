@@ -36,7 +36,7 @@ function Services() {
   ];
   return (
     <>
-      <div className="bg-[#343a40] flex flex-col h-[85vh]">
+      <div className="bg-[#343a40] flex flex-col h-[90vh]">
         <div className="relative">
           <h1 className="text-9xl font-bold flex justify-center mt-[80px] mb-[60px] text-[#6c757d] opacity-20">
             SERVICES
