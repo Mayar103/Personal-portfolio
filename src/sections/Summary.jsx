@@ -74,20 +74,20 @@ function Summary() {
   return (
     <div className="bg-[#212529] flex flex-col h-[screen]">
       <div className="relative">
-        <h1 className="text-9xl font-bold flex justify-center mt-[80px] mb-[60px] text-[#6c757d] opacity-20">
+        <h1 className="min-[280px]:text-5xl md:text-8xl font-bold flex justify-center mt-[80px] mb-[60px] text-[#6c757d] opacity-20">
           SUMMARY
         </h1>
-        <h2 className="text-white text-4xl flex justify-center font-bold absolute left-[46%] top-[47%] border-b border-b-[#20c997] border-b-4">
+        <h2 className="text-white min-[280px]:text-xl md:text-4xl flex justify-center font-bold absolute left-[46%] top-[47%] border-b border-b-[#20c997] border-b-4">
           Resume
         </h2>
       </div>
-      <div className="flex justify-center gap-8">
+      <div className="flex min-[280px]:flex-col min-[280px]:m-auto sm:m-auto lg:flex-row justify-center gap-8">
         <div className="mb-8">
           <h2 className="text-white text-2xl font-bold mb-6">My Education</h2>
           {education.map((edu) => (
             <div
               key={edu.id}
-              className="w-[530px] h-[210px] bg-[#111418] flex flex-col justify-center rounded-[8px] mb-[25px]"
+              className="min-[280px]:w-[270px] min-[450px]:w-[350px] sm:w-[500px] lg:w-[370px] xl:w-[480px] 2xl:w-[530px] min-[280px]:h-[300px] min-[450px]:h-[260px] sm:h-[220px] lg:h-[260px] xl:h-[230px] 2xl:h-[210px] bg-[#111418] flex flex-col justify-center rounded-[8px] mb-[25px]"
             >
               <p className="text-white bg-[#20c997] w-[90px] h-[25px] flex justify-center ml-5 rounded-[6px]">
                 {edu.year}
@@ -98,7 +98,7 @@ function Summary() {
               <h4 className="mb-3 text-[#20c997] w-[fit-content] ml-5 ">
                 {edu.uni}
               </h4>
-              <p className="w-[500px] ml-5">{edu.content}</p>
+              <p className="xl:w-[485px] 2xl:w-[500px] ml-5">{edu.content}</p>
             </div>
           ))}
         </div>
@@ -107,7 +107,7 @@ function Summary() {
           {education.map((edu) => (
             <div
               key={edu.id}
-              className="w-[530px] h-[210px] bg-[#111418] flex flex-col justify-center rounded-[8px] mb-[25px]"
+              className="min-[280px]:w-[270px] min-[450px]:w-[350px] sm:w-[500px] lg:w-[370px] xl:w-[480px] 2xl:w-[530px] min-[280px]:h-[300px] min-[450px]:h-[260px] sm:h-[220px] lg:h-[260px] xl:h-[230px] 2xl:h-[210px] bg-[#111418] flex flex-col justify-center rounded-[8px] mb-[25px]"
             >
               <p className="text-white bg-[#20c997] w-[90px] h-[25px] flex justify-center ml-5 rounded-[6px]">
                 {edu.year}
@@ -118,7 +118,7 @@ function Summary() {
               <h4 className="mb-3 text-[#20c997] w-[fit-content] ml-5 ">
                 {edu.uni}
               </h4>
-              <p className="w-[500px] ml-5">{edu.content}</p>
+              <p className="xl:w-[485px] 2xl:w-[500px] ml-5">{edu.content}</p>
             </div>
           ))}
         </div>
@@ -127,7 +127,7 @@ function Summary() {
         <div className="flex flex-col items-start">
           <h2 className="text-white text-2xl font-bold mb-8">My Skills</h2>
 
-          <div className="grid grid-cols-2 gap-[30px]">
+          <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-[30px]">
             {progress.map((prog) => (
               <div key={prog.id}>
                 <div className="flex items-center justify-between">
@@ -137,7 +137,7 @@ function Summary() {
                   <h3 className="text-white text-medium">{prog.value}%</h3>
                 </div>
                 <progress
-                  className="progress progress-success w-[530px]"
+                  className="progress progress-success min-[280px]:w-[260px] min-[450px]:w-[350px] sm:w-[500px] lg:w-[370px] xl:w-[480px] 2xl:w-[530px]"
                   value={prog.value}
                   max="100"
                 ></progress>

@@ -3,8 +3,10 @@ import { Link } from "react-scroll";
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const SideMenu = () => {
+  const [toggle, setToggle] = useState(false);
   const [activeSection, setActiveSection] = useState(null);
 
   useEffect(() => {
@@ -50,89 +52,101 @@ const SideMenu = () => {
     };
   }, []);
 
+  const toggleButton = () => {
+    setToggle(!toggle);
+    console.log("hello");
+  };
+
+  const makeFalse = () => {
+    console.log(false);
+  };
+
   return (
     <>
-      <div className="h-screen bg-[#121212] flex flex-col items-center">
+      <div className="lg:h-screen lg:bg-[#121212] min-[280px]:bg-[#121212] flex lg:flex-col min-[280px]:items-center min-[280px]:absolute min-[280px]:h-[60px] min-[280px]:w-[100vw] lg:w-[20vw] xl:w-[17vw] min-[280px]:top-0">
         <div>
           <img
             src="Images/pro.jpg"
-            className="rounded-full h-[135px] w-[135px] mt-[70px] mb-[18px]"
+            className="rounded-full lg:h-[100px] lg:w-[100px] xl:h-[135px] xl:w-[135px] mt-[70px] mb-[18px] min-[280px]:hidden lg:block"
           />
         </div>
-        <h1 className="text-white font-semibold text-[20px]">Mayar Mohamed</h1>
-        <ul className="menu flex flex-col gap-[8px] mt-[60px] mr-[70px]">
-          <li
-            className={`w-[30px] ${
-              activeSection === "home" ? "text-[#20c997]" : ""
-            }`}
-          >
-            <Link
-              to="home"
-              smooth={true}
-              duration={500}
-              className="font-semibold text-[18px] hover:text-[#20c997] hover:bg-transparent"
+        <div className="min-[280px]:flex min-[280px]:flex-row min-[280px]:justify-between lg:flex-col md:justify-evenly md:items-center">
+          <h1 className="text-white font-semibold lg:text-[16px] xl:text-[20px] md:ml-[40px] lg:ml-0 md:mr-[120px] lg:mr-0">
+            Mayar Mohamed
+          </h1>
+          <ul className="menu min-[280px]:flex-row lg:flex-col lg:gap-[8px] lg:mt-[60px] lg:mr-[70px] min-[180px]:hidden md:flex">
+            <li
+              className={`w-[30px] md:ml-[20px] lg:ml-0 ${
+                activeSection === "home" ? "text-[#20c997]" : ""
+              }`}
             >
-              Home
-            </Link>
-          </li>
-          <li
-            className={`w-[30px] ${
-              activeSection === "about" ? "text-[#20c997]" : ""
-            }`}
-          >
-            <Link
-              to="about"
-              smooth={true}
-              duration={500}
-              className="font-semibold text-[18px] hover:text-[#20c997] hover:bg-transparent"
+              <Link
+                to="home"
+                smooth={true}
+                duration={500}
+                className="font-semibold text-[18px] hover:text-[#20c997] hover:bg-transparent"
+              >
+                Home
+              </Link>
+            </li>
+            <li
+              className={`w-[30px] md:ml-[40px] lg:ml-0 ${
+                activeSection === "about" ? "text-[#20c997]" : ""
+              }`}
             >
-              About
-            </Link>
-          </li>
-          <li
-            className={`w-[30px] ${
-              activeSection === "services" ? "text-[#20c997]" : ""
-            }`}
-          >
-            <Link
-              to="services"
-              smooth={true}
-              duration={500}
-              className="font-semibold text-[18px] hover:text-[#20c997] hover:bg-transparent"
+              <Link
+                to="about"
+                smooth={true}
+                duration={500}
+                className="font-semibold text-[18px] hover:text-[#20c997] hover:bg-transparent"
+              >
+                About
+              </Link>
+            </li>
+            <li
+              className={`w-[30px] md:ml-[40px] lg:ml-0 ${
+                activeSection === "services" ? "text-[#20c997]" : ""
+              }`}
             >
-              What I do
-            </Link>
-          </li>
-          <li
-            className={`w-[30px] ${
-              activeSection === "summary" ? "text-[#20c997]" : ""
-            }`}
-          >
-            <Link
-              to="summary"
-              smooth={true}
-              duration={500}
-              className="font-semibold text-[18px] hover:text-[#20c997] hover:bg-transparent"
+              <Link
+                to="services"
+                smooth={true}
+                duration={500}
+                className="font-semibold text-[18px] hover:text-[#20c997] hover:bg-transparent"
+              >
+                What I do
+              </Link>
+            </li>
+            <li
+              className={`w-[30px] md:ml-[70px] lg:ml-0 ${
+                activeSection === "summary" ? "text-[#20c997]" : ""
+              }`}
             >
-              Resume
-            </Link>
-          </li>
-          <li
-            className={`w-[30px] ${
-              activeSection === "portfolio" ? "text-[#20c997]" : ""
-            }`}
-          >
-            <Link
-              to="portfolio"
-              smooth={true}
-              duration={500}
-              className="font-semibold text-[18px] hover:text-[#20c997] hover:bg-transparent"
+              <Link
+                to="summary"
+                smooth={true}
+                duration={500}
+                className="font-semibold text-[18px] hover:text-[#20c997] hover:bg-transparent"
+              >
+                Resume
+              </Link>
+            </li>
+            <li
+              className={`w-[30px] md:ml-[50px] lg:ml-0 ${
+                activeSection === "portfolio" ? "text-[#20c997]" : ""
+              }`}
             >
-              Portfolio
-            </Link>
-          </li>
-          {/* <li
-            className={`w-[30px] ${
+              <Link
+                to="portfolio"
+                smooth={true}
+                duration={500}
+                className="font-semibold text-[18px] hover:text-[#20c997] hover:bg-transparent"
+              >
+                Portfolio
+              </Link>
+            </li>
+            {/* <li
+            className={`w-[30px] md:ml-[20px] $ lg:ml-0 {
               activeSection === "contact" ? "text-[#20c997]" : ""
             }`}
           >
@@ -145,8 +159,102 @@ const SideMenu = () => {
               Contact
             </Link>
           </li> */}
-        </ul>
-        <div className="flex items-center gap-4 mt-40">
+          </ul>
+          {toggle && (
+            <ul className="absolute top-[60px] w-[100vw] h-[200px] bg-[#121212]">
+              <li
+                className={`ml-[15px] mb-[10px] ${
+                  activeSection === "home" ? "text-[#20c997]" : ""
+                }`}
+              >
+                <Link
+                  to="home"
+                  smooth={true}
+                  duration={500}
+                  className="font-semibold text-[18px] hover:text-[#20c997] hover:bg-transparent"
+                >
+                  Home
+                </Link>
+              </li>
+              <li
+                className={`ml-[15px] mb-[10px] ${
+                  activeSection === "about" ? "text-[#20c997]" : ""
+                }`}
+              >
+                <Link
+                  to="about"
+                  smooth={true}
+                  duration={500}
+                  className="font-semibold text-[18px] hover:text-[#20c997] hover:bg-transparent"
+                >
+                  About
+                </Link>
+              </li>
+
+              <li
+                className={`ml-[15px] mb-[10px] ${
+                  activeSection === "services" ? "text-[#20c997]" : ""
+                }`}
+              >
+                <Link
+                  to="services"
+                  smooth={true}
+                  duration={500}
+                  className="font-semibold text-[18px] hover:text-[#20c997] hover:bg-transparent"
+                >
+                  What I do
+                </Link>
+              </li>
+              <li
+                className={`ml-[15px] mb-[10px] ${
+                  activeSection === "summary" ? "text-[#20c997]" : ""
+                }`}
+              >
+                <Link
+                  to="summary"
+                  smooth={true}
+                  duration={500}
+                  className="font-semibold text-[18px] hover:text-[#20c997] hover:bg-transparent"
+                >
+                  Resume
+                </Link>
+              </li>
+              <li
+                className={`ml-[15px] mb-[10px] ${
+                  activeSection === "portfolio" ? "text-[#20c997]" : ""
+                }`}
+              >
+                <Link
+                  to="portfolio"
+                  smooth={true}
+                  duration={500}
+                  className="font-semibold text-[18px] hover:text-[#20c997] hover:bg-transparent"
+                >
+                  Portfolio
+                </Link>
+              </li>
+              {/* <li
+            className={`mb-[10px] {
+              activeSection === "contact" ? "text-[#20c997]" : ""
+            }`}
+          >
+            <Link
+              to="contact"
+              smooth={true}
+              duration={500}
+              className="font-semibold text-[18px] hover:text-[#20c997] hover:bg-transparent"
+            >
+              Contact
+            </Link>
+          </li> */}
+            </ul>
+          )}
+
+          <button onClick={toggleButton}>
+            <GiHamburgerMenu className="md:hidden text-2xl" />
+          </button>
+        </div>
+        <div className="items-center gap-4 sm:mt-0 lg:mt-20 xl:mt-44 min-[180px]:hidden lg:flex">
           <a href="mailto:mayarmohamed775@gmail.com" target="_blank">
             <MdEmail className="text-[#20c997] text-2xl cursor-pointer" />
           </a>

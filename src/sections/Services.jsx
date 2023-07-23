@@ -36,27 +36,27 @@ function Services() {
   ];
   return (
     <>
-      <div className="bg-[#343a40] flex flex-col h-[90vh]">
+      <div className="bg-[#343a40] flex flex-col h-[screen]">
         <div className="relative">
-          <h1 className="text-9xl font-bold flex justify-center mt-[80px] mb-[60px] text-[#6c757d] opacity-20">
+          <h1 className="min-[280px]:text-5xl md:text-8xl font-bold flex justify-center mt-[80px] mb-[60px] text-[#6c757d] opacity-20">
             SERVICES
           </h1>
-          <h2 className="text-white text-4xl flex justify-center font-bold absolute left-[43%] top-[47%] border-b border-b-[#20c997] border-b-4">
+          <h2 className="text-white min-[280px]:text-xl md:text-4xl flex justify-center font-bold absolute left-[43%] top-[47%] border-b border-b-[#20c997] border-b-4">
             What I Do?
           </h2>
         </div>
-        <div className="flex justify-evenly mt-[40px]">
-          <div className="grid grid-rows-2 grid-flow-col">
+        <div className="flex justify-evenly mt-[40px] lg:mb-[20px]">
+          <div className="grid min-[280px]:grid-rows-4 md:gap-2 xl:gap-1 lg:grid-rows-2 grid-flow-col">
             {services.map((service) => (
-              <div key={service.id} className="w-[500px] flex mb-14">
-                <div className="text-[#20c997] text-4xl mr-5">
+              <div key={service.id} className="min-[280px]:w-[270px] min-[450px]:w-[350px] sm:w-[500px] md:w-[540px] lg:w-[410px] xl:w-[470px] flex mb-14">
+                <div className="text-[#20c997] min-[280px]:text-3xl lg:text-4xl mr-5">
                   {service.icon}
                 </div>
                 <div>
-                  <h3 className="text-white text-xl font-semibold mb-3">
+                  <h3 className="text-white min-[280px]:text-2xl lg:text-xl font-semibold mb-3">
                     {service.name}
                   </h3>
-                  <p className="leading-6 text-lg">{service.description}</p>
+                  <p className="leading-6 min-[280px]:text-xl lg:text-lg">{service.description}</p>
                 </div>
               </div>
             ))}

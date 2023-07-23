@@ -5,7 +5,7 @@ import About from "./sections/About";
 import Portfolio from "./sections/Portfolio";
 import Services from "./sections/Services";
 import Summary from "./sections/Summary";
-import Contact from "./sections/Contact";
+// import Contact from "./sections/Contact";
 import CopyRights from "./sections/CopyRights";
 import { Element } from "react-scroll";
 
@@ -13,10 +13,10 @@ function App() {
   return (
     <>
       <div className="flex">
-        <div className="w-[17vw] fixed">
+        <div className="lg:w-[20vw] xl:w-[17vw] sm:w-0 xl:block fixed">
           <SideMenu />
         </div>
-        <div className="w-[83vw] ml-[17vw]">
+        <div className="lg:w-[80vw] xl:w-[83vw] min-[280px]:w-[100vw] lg:ml-[20vw] xl:ml-[17vw]">
           <Element name="home">
             <Section id="home" title={<Welcome />} />
           </Element>

@@ -52,7 +52,7 @@ function Welcome() {
       <div className="hero-content text-center text-neutral-content">
         <div className="max-w-xl">
           <h3 className="text-white font-semibold text-3xl mb-8">Welcome</h3>
-          <h1 className="text-white font-bold text-5xl mb-8">
+          <h1 className="text-white font-bold min-[280px]:text-3xl md:text-5xl mb-8">
             I'm {displayText}
           </h1>
           <h2 className="text-[#dee3e4] text-2xl mb-8">

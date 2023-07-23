@@ -116,10 +116,10 @@ function Portfolio() {
   return (
     <div className="bg-[#343a40] flex flex-col h-[screen]">
       <div className="relative">
-        <h1 className="text-9xl font-bold flex justify-center mt-[80px] mb-[60px] text-[#6c757d] opacity-20">
+        <h1 className="min-[280px]:text-5xl md:text-8xl font-bold flex justify-center mt-[80px] mb-[60px] text-[#6c757d] opacity-20">
           PORFOLIO
         </h1>
-        <h2 className="text-white text-4xl flex justify-center font-bold absolute left-[43%] top-[47%] border-b border-b-[#20c997] border-b-4">
+        <h2 className="text-white min-[280px]:text-xl md:text-4xl flex justify-center font-bold absolute left-[43%] top-[47%] border-b border-b-[#20c997] border-b-4">
           My Work
         </h2>
       </div>
@@ -139,19 +139,19 @@ function Portfolio() {
         ))}
       </div>
 
-      <div className=" tab-content mt-10 mb-16 grid grid-cols-3 gap-6 m-auto">
+      <div className=" tab-content mt-10 mb-16 grid sm:grid-cols-2 2xl:grid-cols-3 gap-6 m-auto">
         {dataToRender.map((tab) => (
           <div key={tab.id}>
             <div className="thisGrid" onClick={() => showDetails(tab)}>
               <div className="hover:opacity-60 ">
                 <img
                   src={tab.img}
-                  className="relative w-[340px] h-[380px] rounded-[10px] cursor-pointer"
+                  className="relative min-[450px]:w-[350px] min-[450px]:h-[350px] sm:w-[320px] sm:h-[320px] md:w-[340px] md:h-[350px] 2xl:h-[380px] rounded-[10px] cursor-pointer min-[280px]:w-[275px]"
                 />
               </div>
 
               <div className="thisEffect">
-                <div className="mt-[50%] text-center text-lg  capitalize text-white ">
+                <div className="mt-[50%] text-center text-lg capitalize text-white">
                   <h6 className="text-2xl font-medium">{tab.name}</h6>
                   <p className="text-sm font-small">{tab.cat}</p>
                 </div>

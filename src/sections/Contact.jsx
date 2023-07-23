@@ -50,10 +50,10 @@ function Contact() {
   return (
     <div className="bg-[#212529] flex flex-col h-[screen]">
       <div className="relative">
-        <h1 className="text-9xl font-bold flex justify-center mt-[80px] mb-[60px] text-[#6c757d] opacity-20">
+        <h1 className="smin-[280px]:text-5xl md:text-8xl font-bold flex justify-center mt-[80px] mb-[60px] text-[#6c757d] opacity-20">
           CONTACT
         </h1>
-        <h2 className="text-white text-4xl flex justify-center font-bold absolute left-[43%] top-[47%] border-b border-b-[#20c997] border-b-4">
+        <h2 className="text-white min-[280px]:text-xl md:text-4xl flex justify-center font-bold absolute left-[43%] top-[47%] border-b border-b-[#20c997] border-b-4">
           Get in Touch
         </h2>
       </div>
