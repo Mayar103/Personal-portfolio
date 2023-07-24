@@ -161,7 +161,7 @@ const SideMenu = () => {
           </li> */}
           </ul>
           {toggle && (
-            <ul className="absolute top-[60px] w-[100vw] h-[200px] bg-[#121212]">
+            <ul className="absolute top-[60px] w-[100vw] h-[200px] bg-[#121212] text-[hsla(0,0%,100%,.7)]">
               <li
                 className={`ml-[15px] mb-[10px] ${
                   activeSection === "home" ? "text-[#20c997]" : ""
