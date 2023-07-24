@@ -8,8 +8,11 @@ import Summary from "./sections/Summary";
 // import Contact from "./sections/Contact";
 import CopyRights from "./sections/CopyRights";
 import { Element } from "react-scroll";
+import { useState } from "react";
+import ScrollToTopArrow from "./components/ScrollToTop";
 
 function App() {
+  const [arrow, setArrow] = useState(true);
   return (
     <>
       <div className="flex">
@@ -20,6 +23,7 @@ function App() {
           <Element name="home">
             <Section id="home" title={<Welcome />} />
           </Element>
+
           <Element name="about">
             <Section id="about" title={<About />} />
           </Element>
@@ -39,6 +43,7 @@ function App() {
             <Section title={<CopyRights />} />
           </Element>
         </div>
+        <ScrollToTopArrow />
       </div>
     </>
   );

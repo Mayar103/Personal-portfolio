@@ -87,18 +87,18 @@ function Summary() {
           {education.map((edu) => (
             <div
               key={edu.id}
-              className="min-[290px]:w-[288px] min-[450px]:w-[350px] sm:w-[500px] lg:w-[370px] xl:w-[480px] 2xl:w-[530px] min-[290px]:h-[300px] min-[450px]:h-[260px] sm:h-[220px] lg:h-[260px] xl:h-[230px] 2xl:h-[210px] bg-[#111418] flex flex-col justify-center rounded-[8px] mb-[25px]"
+              className="min-[290px]:w-[285px] min-[450px]:w-[350px] sm:w-[500px] lg:w-[370px] xl:w-[480px] 2xl:w-[530px] min-[290px]:h-[300px] min-[450px]:h-[260px] sm:h-[220px] lg:h-[260px] xl:h-[230px] 2xl:h-[210px] bg-[#111418] flex flex-col justify-center rounded-[8px] mb-[25px] p-6"
             >
-              <p className="text-white bg-[#20c997] w-[90px] h-[25px] flex justify-center ml-5 rounded-[6px]">
+              <p className="text-white bg-[#20c997] w-[90px] h-[25px] flex justify-center rounded-[6px]">
                 {edu.year}
               </p>
-              <h2 className="mb-2 mt-2 w-[fit-content] text-white text-2xl ml-5 font-semibold">
+              <h2 className="mb-2 mt-2 w-[fit-content] text-white text-2xl font-semibold">
                 {edu.study}
               </h2>
-              <h4 className="mb-3 text-[#20c997] w-[fit-content] ml-5 ">
+              <h4 className="mb-3 text-[#20c997] w-[fit-content] ">
                 {edu.uni}
               </h4>
-              <p className="xl:w-[485px] 2xl:w-[500px] ml-5 text-[hsla(0,0%,100%,.7)]">
+              <p className="xl:w-[485px] 2xl:w-[500px] text-[hsla(0,0%,100%,.7)]">
                 {edu.content}
               </p>
             </div>
@@ -109,18 +109,18 @@ function Summary() {
           {education.map((edu) => (
             <div
               key={edu.id}
-              className="min-[280px]:w-[275px] min-[450px]:w-[350px] sm:w-[500px] lg:w-[370px] xl:w-[480px] 2xl:w-[530px] min-[280px]:h-[300px] min-[450px]:h-[260px] sm:h-[220px] lg:h-[260px] xl:h-[230px] 2xl:h-[210px] bg-[#111418] flex flex-col justify-center rounded-[8px] mb-[25px]"
+              className="min-[290px]:w-[285px] min-[450px]:w-[350px] sm:w-[500px] lg:w-[370px] xl:w-[480px] 2xl:w-[530px] min-[280px]:h-[300px] min-[450px]:h-[260px] sm:h-[220px] lg:h-[260px] xl:h-[230px] 2xl:h-[210px] bg-[#111418] flex flex-col justify-center rounded-[8px] mb-[25px]  p-6"
             >
-              <p className="text-white bg-[#20c997] w-[90px] h-[25px] flex justify-center ml-5 rounded-[6px]">
+              <p className="text-white bg-[#20c997] w-[90px] h-[25px] flex justify-center rounded-[6px]">
                 {edu.year}
               </p>
-              <h2 className="mb-2 mt-2 w-[fit-content] text-white text-2xl ml-5 font-semibold">
+              <h2 className="mb-2 mt-2 w-[fit-content] text-white text-2xl font-semibold">
                 {edu.study}
               </h2>
-              <h4 className="mb-3 text-[#20c997] w-[fit-content] ml-5 ">
+              <h4 className="mb-3 text-[#20c997] w-[fit-content] ">
                 {edu.uni}
               </h4>
-              <p className="xl:w-[485px] 2xl:w-[500px] ml-5 text-[hsla(0,0%,100%,.7)]">
+              <p className="xl:w-[485px] 2xl:w-[500px] text-[hsla(0,0%,100%,.7)]">
                 {edu.content}
               </p>
             </div>
