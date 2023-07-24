@@ -37,11 +37,11 @@ function Services() {
   return (
     <>
       <div className="bg-[#343a40] flex flex-col h-[screen]">
-        <div className="relative">
+        <div className="relative flex flex-col items-center">
           <h1 className="min-[280px]:text-5xl md:text-8xl font-bold flex justify-center mt-[80px] mb-[60px] text-[#6c757d] opacity-20">
             SERVICES
           </h1>
-          <h2 className="text-white min-[280px]:text-xl md:text-4xl flex justify-center font-bold absolute left-[43%] top-[47%] border-b border-b-[#20c997] border-b-4">
+          <h2 className="text-white min-[280px]:text-xl md:text-4xl flex justify-center font-bold absolute top-[47%] border-b border-b-[#20c997] border-b-4">
             What I Do?
           </h2>
         </div>

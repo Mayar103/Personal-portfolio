@@ -13,10 +13,10 @@ function App() {
   return (
     <>
       <div className="flex">
-        <div className="lg:w-[20vw] xl:w-[17vw] sm:w-0 xl:block fixed">
+        <div className="lg:w-[20vw] xl:w-[17vw] sm:w-0 xl:block fixed z-10">
           <SideMenu />
         </div>
-        <div className="lg:w-[80vw] xl:w-[83vw] min-[280px]:w-[100vw] lg:ml-[20vw] xl:ml-[17vw]">
+        <div className="lg:w-[80vw] xl:w-[83vw] min-[280px]:w-[100vw] lg:ml-[20vw] xl:ml-[17vw] z-2">
           <Element name="home">
             <Section id="home" title={<Welcome />} />
           </Element>

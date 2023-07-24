@@ -115,11 +115,11 @@ function Portfolio() {
 
   return (
     <div className="bg-[#343a40] flex flex-col h-[screen]">
-      <div className="relative">
+      <div className="relative flex flex-col items-center">
         <h1 className="min-[280px]:text-5xl md:text-8xl font-bold flex justify-center mt-[80px] mb-[60px] text-[#6c757d] opacity-20">
           PORFOLIO
         </h1>
-        <h2 className="text-white min-[280px]:text-xl md:text-4xl flex justify-center font-bold absolute left-[43%] top-[47%] border-b border-b-[#20c997] border-b-4">
+        <h2 className="text-white min-[280px]:text-xl md:text-4xl flex justify-center font-bold absolute top-[47%] border-b border-b-[#20c997] border-b-4">
           My Work
         </h2>
       </div>
@@ -163,26 +163,29 @@ function Portfolio() {
 
       {showModal && selectedItem && (
         <div className="fixed inset-0 z-50 flex items-center justify-center w-full h-full bg-black bg-opacity-60">
-          <div className="bg-[#343a40] rounded-lg p-6 w-[800px] h-[440px] flex flex-col">
+          <div className="bg-[#343a40] rounded-lg p-6 min-[280px]:w-[270px] min-[280px]:h-[565px] sm:w-[580px] md:w-[600px] md:h-[420px] lg:w-[800px] h-[440px] flex flex-col">
             <div className="flex">
-              <h2 className="text-2xl font-semibold mb-8 text-white m-auto">
+              <h2 className="text-2xl font-semibold min-[280px]:mb-2 md:mb-8 text-white m-auto">
                 {selectedItem.name}
               </h2>
               <button
-                className="text-white rounded mb-12"
+                className="text-white rounded min-[280px]:mb-4 md:mb-12"
                 onClick={() => setShowModal(false)}
               >
                 <AiOutlineCloseCircle className="text-3xl" />
               </button>
             </div>
-            <div className="flex justify-evenly items-center gap-8 mt-2">
-              <img src={selectedItem.img} className="w-[350px] h-[290px]" />
+            <div className="flex min-[280px]:flex-col md:flex-row justify-evenly items-center gap-8 mt-2">
+              <img
+                src={selectedItem.img}
+                className="min-[280px]:w-[180px] min-[280px]:h-[140px] sm:w-[280px] md:w-[250px] md:h-[260px] lg:w-[350px] h-[290px]"
+              />
               <div className="flex flex-col">
-                <h3 className="text-lg font-semibold mb-2 text-white">
+                <h3 className="min-[280px]:text-md md:text-lg font-semibold mb-2 text-white">
                   Project info:
                 </h3>
-                <p>{selectedItem.content}</p>
-                <h3 className="text-lg font-semibold mb-2 mt-4 text-white">
+                <p className="text-hsla(0,0%,100%)">{selectedItem.content}</p>
+                <h3 className="min-[280px]:text-md md:text-lg font-semibold mb-2 mt-4 text-white">
                   Project details:
                 </h3>
                 <p>
@@ -197,14 +200,13 @@ function Portfolio() {
                 <div className="flex items-center gap-2">
                   {selectedItem.id === 6 ? (
                     <div className="flex items-center gap-2">
-                      <span className="text-white">Figma:</span>{" "}
+                      <span className="text-white">Figma:</span>
                       <a href={selectedItem.figma} target="_blank">
                         <FiFigma className="text-[#20c997] text-lg cursor-pointer" />
                       </a>
                     </div>
                   ) : (
                     <div className="flex items-center gap-2">
-                      {" "}
                       <span className="text-white">Github:</span>{" "}
                       <a href={selectedItem.github} target="_blank">
                         <BsGithub className="text-[#20c997] text-lg cursor-pointer" />

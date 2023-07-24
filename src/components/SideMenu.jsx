@@ -71,7 +71,7 @@ const SideMenu = () => {
           />
         </div>
         <div className="min-[280px]:flex min-[280px]:flex-row min-[280px]:justify-between lg:flex-col md:justify-evenly md:items-center">
-          <h1 className="text-white font-semibold lg:text-[16px] xl:text-[20px] md:ml-[40px] lg:ml-0 md:mr-[120px] lg:mr-0">
+          <h1 className="text-white font-semibold lg:text-[16px] xl:text-[20px] min-[280px]:ml-[10px] sm:ml-[30px] md:ml-[40px] lg:ml-0 md:mr-[120px] lg:mr-0">
             Mayar Mohamed
           </h1>
           <ul className="menu min-[280px]:flex-row lg:flex-col lg:gap-[8px] lg:mt-[60px] lg:mr-[70px] min-[180px]:hidden md:flex">
@@ -251,10 +251,10 @@ const SideMenu = () => {
           )}
 
           <button onClick={toggleButton}>
-            <GiHamburgerMenu className="md:hidden text-2xl" />
+            <GiHamburgerMenu className="md:hidden text-2xl min-[280px]:ml-[115px] min-[320px]:ml-[145px] min-[370px]:ml-[185px] min-[420px]:ml-[290px] min-[480px]:ml-[300px] min-[600px]:ml-[420px] sm:ml-[500px]" />
           </button>
         </div>
-        <div className="items-center gap-4 sm:mt-0 lg:mt-20 xl:mt-44 min-[180px]:hidden lg:flex">
+        <div className="items-center gap-4 sm:mt-0 lg:mt-20 xl:mt-44 min-[280px]:hidden lg:flex">
           <a href="mailto:mayarmohamed775@gmail.com" target="_blank">
             <MdEmail className="text-[#20c997] text-2xl cursor-pointer" />
           </a>
