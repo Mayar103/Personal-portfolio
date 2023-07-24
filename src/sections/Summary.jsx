@@ -98,7 +98,9 @@ function Summary() {
               <h4 className="mb-3 text-[#20c997] w-[fit-content] ml-5 ">
                 {edu.uni}
               </h4>
-              <p className="xl:w-[485px] 2xl:w-[500px] ml-5">{edu.content}</p>
+              <p className="xl:w-[485px] 2xl:w-[500px] ml-5 text-[hsla(0,0%,100%,.7)]">
+                {edu.content}
+              </p>
             </div>
           ))}
         </div>
@@ -118,7 +120,9 @@ function Summary() {
               <h4 className="mb-3 text-[#20c997] w-[fit-content] ml-5 ">
                 {edu.uni}
               </h4>
-              <p className="xl:w-[485px] 2xl:w-[500px] ml-5">{edu.content}</p>
+              <p className="xl:w-[485px] 2xl:w-[500px] ml-5  text-[hsla(0,0%,100%,.7)]">
+                {edu.content}
+              </p>
             </div>
           ))}
         </div>

@@ -18,14 +18,14 @@ function About() {
               I'm <span className="text-[#20c997]">Mayar Mohamed</span>, a Web
               Developer
             </h2>
-            <p className="mb-[18px] leading-8 min-[280px]:text:md md:text-lg ">
+            <p className="mb-[18px] leading-8 min-[280px]:text:md text-[hsla(0,0%,100%,.7)]">
               I can help you build a website for your business at an affordable
               price. You can choose the functionalities you want to apply in
               your project. It's fine if you have a specific template to be
               implemented in the progict. You can also choose major colors and
               images of the whole website to fit your major point.
             </p>
-            <p className="leading-8 min-[280px]:text:md text-lg">
+            <p className="leading-8 min-[280px]:text:md text-[hsla(0,0%,100%,.7)]">
               I can also help you build UI design that reflects visually
               appealing interfaces in the field you choose, having priviledge of
               new techniques and trendy looking websites.

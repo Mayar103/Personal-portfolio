@@ -127,7 +127,7 @@ function Portfolio() {
         {tabs.map((tab) => (
           <button
             key={tab.id}
-            className={`text-lg font-semibold tab-btn ${
+            className={`text-lg font-semibold tab-btn text-hsla(0,0%,100%,.7) ${
               tab.id === activeTab
                 ? "text-[#20c997] font-bold border-b border-b-[#20c997] border-b-2"
                 : ""
@@ -184,17 +184,19 @@ function Portfolio() {
                 <h3 className="min-[280px]:text-md md:text-lg font-semibold mb-2 text-white">
                   Project info:
                 </h3>
-                <p className="text-hsla(0,0%,100%)">{selectedItem.content}</p>
+                <p className="text-[#fff]">{selectedItem.content}</p>
                 <h3 className="min-[280px]:text-md md:text-lg font-semibold mb-2 mt-4 text-white">
                   Project details:
                 </h3>
-                <p>
-                  <span className="text-white mt-2">Technologies:</span>{" "}
+                <p className="text-[#fff]">
+                  <span className="text-white mt-2 text-white">
+                    Technologies:
+                  </span>{" "}
                   {selectedItem.technologies}
                 </p>
                 <div className="divider mt-1 mb-1"></div>
-                <p>
-                  <span className="text-white">Time:</span> {selectedItem.time}
+                <p className="text-[#fff]">
+                  <span className="text-white ">Time:</span> {selectedItem.time}
                 </p>
                 <div className="divider mt-1 mb-1"></div>
                 <div className="flex items-center gap-2">

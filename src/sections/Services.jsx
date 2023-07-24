@@ -48,7 +48,10 @@ function Services() {
         <div className="flex justify-evenly mt-[40px] lg:mb-[20px]">
           <div className="grid min-[280px]:grid-rows-4 md:gap-2 xl:gap-1 lg:grid-rows-2 grid-flow-col">
             {services.map((service) => (
-              <div key={service.id} className="min-[280px]:w-[270px] min-[450px]:w-[350px] sm:w-[500px] md:w-[540px] lg:w-[410px] xl:w-[470px] flex mb-14">
+              <div
+                key={service.id}
+                className="min-[280px]:w-[270px] min-[450px]:w-[350px] sm:w-[500px] md:w-[540px] lg:w-[410px] xl:w-[470px] flex mb-14"
+              >
                 <div className="text-[#20c997] min-[280px]:text-3xl lg:text-4xl mr-5">
                   {service.icon}
                 </div>
@@ -56,7 +59,9 @@ function Services() {
                   <h3 className="text-white min-[280px]:text-2xl lg:text-xl font-semibold mb-3">
                     {service.name}
                   </h3>
-                  <p className="leading-6 min-[280px]:text-xl lg:text-lg">{service.description}</p>
+                  <p className="leading-6 min-[280px]:text-xl lg:text-lg text-[hsla(0,0%,100%,.7)]">
+                    {service.description}
+                  </p>
                 </div>
               </div>
             ))}
