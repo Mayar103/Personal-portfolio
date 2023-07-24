@@ -34,7 +34,7 @@ function About() {
           <div className="grid md:grid-cols-2 lg:grid-cols-1 min-[280px]:w-[270px] min-[450px]:w-[350px] sm:w-[40vw] min-[280px]:m-auto md:w-[70vw] lg:w-[20vw] lg:mr-[90px] min-[280px]:mt-[60px] lg:mt-0">
             <div className="flex gap-[5px] md:mb-[1rem] lg:mb-0">
               <h3 className="text-white text-base font-semibold">Name:</h3>
-              <p>Mayar Mohamed</p>
+              <p className="text-[hsla(0,0%,100%,.7)]">Mayar Mohamed</p>
             </div>
             <div className="divider mb-[0.5rem] md:hidden lg:flex"></div>
             <div className="flex gap-[5px]">
@@ -49,12 +49,12 @@ function About() {
             <div className="divider mt-[0.5rem] mb-[0.5rem] md:hidden lg:flex"></div>
             <div className="flex gap-[5px]">
               <h3 className="text-white text-base font-semibold">Age:</h3>
-              <p>24</p>
+              <p className="text-[hsla(0,0%,100%,.7)]">24</p>
             </div>
             <div className="divider mt-[0.5rem] mb-[0.5rem] md:hidden lg:flex"></div>
             <div className="flex gap-[5px] mb-[28px]">
               <h3 className="text-white text-base font-semibold">From:</h3>
-              <p>Ismailia, Egypt</p>
+              <p className="text-[hsla(0,0%,100%,.7)]">Ismailia, Egypt</p>
             </div>
             <div>
               <button className="btn bg-[#20c997] min-[280px]:w-[180px] sm:w-[22vw] lg:w-[200px] xl:w-[180px] lg:h-[5vh] rounded-full hover:bg-[#1baa80] md:m-auto">
