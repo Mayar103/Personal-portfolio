@@ -251,7 +251,7 @@ const SideMenu = () => {
           )}
 
           <button onClick={toggleButton}>
-            <GiHamburgerMenu className="md:hidden text-2xl min-[280px]:ml-[115px] min-[320px]:ml-[145px] min-[370px]:ml-[185px] min-[420px]:ml-[290px] min-[480px]:ml-[300px] min-[600px]:ml-[420px] sm:ml-[500px]" />
+            <GiHamburgerMenu className="md:hidden text-2xl min-[280px]:ml-[115px] min-[320px]:ml-[145px] min-[370px]:ml-[185px] min-[420px]:ml-[290px] min-[480px]:ml-[300px] min-[600px]:ml-[420px] sm:ml-[500px] text-white" />
           </button>
         </div>
         <div className="items-center gap-4 sm:mt-0 lg:mt-20 xl:mt-44 min-[280px]:hidden lg:flex">
