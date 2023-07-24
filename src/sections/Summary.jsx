@@ -87,7 +87,7 @@ function Summary() {
           {education.map((edu) => (
             <div
               key={edu.id}
-              className="min-[280px]:w-[285px] min-[450px]:w-[350px] sm:w-[500px] lg:w-[370px] xl:w-[480px] 2xl:w-[530px] min-[280px]:h-[300px] min-[450px]:h-[260px] sm:h-[220px] lg:h-[260px] xl:h-[230px] 2xl:h-[210px] bg-[#111418] flex flex-col justify-center rounded-[8px] mb-[25px]"
+              className="min-[290px]:w-[288px] min-[450px]:w-[350px] sm:w-[500px] lg:w-[370px] xl:w-[480px] 2xl:w-[530px] min-[290px]:h-[300px] min-[450px]:h-[260px] sm:h-[220px] lg:h-[260px] xl:h-[230px] 2xl:h-[210px] bg-[#111418] flex flex-col justify-center rounded-[8px] mb-[25px]"
             >
               <p className="text-white bg-[#20c997] w-[90px] h-[25px] flex justify-center ml-5 rounded-[6px]">
                 {edu.year}
