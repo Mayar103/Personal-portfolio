@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { Link } from "react-scroll";
 
 function Welcome() {
   const [texts, setTexts] = useState([
-    "Mayar Mohamed",
+    "Mayar Hassan",
     "a Frontend Developer",
-    "a UI/UX Designer",
   ]);
 
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
@@ -53,7 +52,7 @@ function Welcome() {
         <div className="max-w-xl">
           <h3 className="text-white font-semibold text-3xl mb-8">Welcome</h3>
           <h1 className="text-white font-bold min-[280px]:text-3xl md:text-5xl mb-8">
-            I'm {displayText}
+            I am {displayText}
           </h1>
           <h2 className="text-[#dee3e4] text-2xl mb-8">
             based in Ismailia, Egypt.

@@ -1,4 +1,4 @@
-import cv from "../../public/Images/Mayar Mohamed Meshabet.pdf";
+import cv from "../../public/Images/Mayar Hassan's resume.pdf";
 import { FaDownload } from "react-icons/fa";
 
 function Summary() {
@@ -28,21 +28,47 @@ function Summary() {
         "BSc of Languages and Literature, English Dept., Faculty of Alsun, Suez Canal University.",
     },
   ];
+  const experience = [
+    {
+      id: 1,
+      study: "Fullstack Developer",
+      uni: "Premast",
+      year: "2024-Present",
+      content:
+        "Developing responsive web applications, focusing on creating dynamic, user-friendly interfaces and collaborating with designers and back-end teams.",
+    },
+    {
+      id: 2,
+      study: "English Instructor",
+      uni: "Golingo",
+      year: "2023-2024",
+      content:
+        "Preparing and teaching content using gamification perspective, and conducting placement tests for new students to determine their current level.",
+    },
+    {
+      id: 3,
+      study: "Co-Academic Supervisor",
+      uni: "Explore British Academy (EBA)",
+      year: "2017-2021",
+      content:
+        "Conducting online interviews for different candidates, and reviewing the performance of teachers.",
+    },
+  ];
   const progress = [
     {
       id: 1,
       name: "Web Design",
-      value: "75",
+      value: "95",
     },
     {
       id: 2,
       name: "JavaScript",
-      value: "90",
+      value: "97",
     },
     {
       id: 3,
-      name: "HTML/CSS",
-      value: "98",
+      name: "HTML5/CSS3",
+      value: "100",
     },
     {
       id: 4,
@@ -52,11 +78,11 @@ function Summary() {
     {
       id: 5,
       name: "React",
-      value: "85",
+      value: "95",
     },
     {
       id: 6,
-      name: "Angular",
+      name: "Next.JS",
       value: "90",
     },
     {
@@ -68,6 +94,16 @@ function Summary() {
       id: 8,
       name: "MaterialUI",
       value: "96",
+    },
+    {
+      id: 9,
+      name: "SCSS",
+      value: "90",
+    },
+    {
+      id: 10,
+      name: "Bootstrap",
+      value: "94",
     },
   ];
 
@@ -87,9 +123,9 @@ function Summary() {
           {education.map((edu) => (
             <div
               key={edu.id}
-              className="min-[290px]:w-[285px] min-[450px]:w-[350px] sm:w-[500px] lg:w-[370px] xl:w-[480px] 2xl:w-[530px] min-[290px]:h-[300px] min-[450px]:h-[260px] sm:h-[220px] lg:h-[260px] xl:h-[230px] 2xl:h-[210px] bg-[#111418] flex flex-col justify-center rounded-[8px] mb-[25px] p-6"
+              className="min-[290px]:w-[285px] min-[450px]:w-[350px] sm:w-[500px] lg:w-[370px] xl:w-[480px] 2xl:w-[530px] min-[290px]:h-[320px] min-[450px]:h-[270px] sm:h-[240px] lg:h-[260px] xl:h-[230px] 2xl:h-[210px] bg-[#111418] flex flex-col justify-center rounded-[8px] mb-[25px] p-6"
             >
-              <p className="text-white bg-[#20c997] w-[90px] h-[25px] flex justify-center rounded-[6px]">
+              <p className="text-white bg-[#20c997] min-w-[90px] max-w-[120px] h-[25px] flex justify-center rounded-[6px]">
                 {edu.year}
               </p>
               <h2 className="mb-2 mt-2 w-[fit-content] text-white text-2xl font-semibold">
@@ -98,7 +134,7 @@ function Summary() {
               <h4 className="mb-3 text-[#20c997] w-[fit-content] ">
                 {edu.uni}
               </h4>
-              <p className="xl:w-[485px] 2xl:w-[500px] text-[hsla(0,0%,100%,.7)]">
+              <p className="pr-12 xl:w-[485px] 2xl:w-[500px] text-[hsla(0,0%,100%,.7)]">
                 {edu.content}
               </p>
             </div>
@@ -106,22 +142,22 @@ function Summary() {
         </div>
         <div className="mb-8">
           <h2 className="text-white text-2xl font-bold mb-6">My Experience</h2>
-          {education.map((edu) => (
+          {experience.map((exp) => (
             <div
-              key={edu.id}
-              className="min-[290px]:w-[285px] min-[450px]:w-[350px] sm:w-[500px] lg:w-[370px] xl:w-[480px] 2xl:w-[530px] min-[280px]:h-[300px] min-[450px]:h-[260px] sm:h-[220px] lg:h-[260px] xl:h-[230px] 2xl:h-[210px] bg-[#111418] flex flex-col justify-center rounded-[8px] mb-[25px]  p-6"
+              key={exp.id}
+              className="min-[290px]:w-[285px] min-[450px]:w-[350px] sm:w-[500px] lg:w-[370px] xl:w-[480px] 2xl:w-[530px] min-[290px]:h-[320px] min-[450px]:h-[270px] sm:h-[240px] lg:h-[260px] xl:h-[230px] 2xl:h-[210px] bg-[#111418] flex flex-col justify-center rounded-[8px] mb-[25px] p-6"
             >
-              <p className="text-white bg-[#20c997] w-[90px] h-[25px] flex justify-center rounded-[6px]">
-                {edu.year}
+              <p className="text-white bg-[#20c997] min-w-[90px] max-w-[120px] h-[25px] flex justify-center rounded-[6px]">
+                {exp.year}
               </p>
               <h2 className="mb-2 mt-2 w-[fit-content] text-white text-2xl font-semibold">
-                {edu.study}
+                {exp.study}
               </h2>
               <h4 className="mb-3 text-[#20c997] w-[fit-content] ">
-                {edu.uni}
+                {exp.uni}
               </h4>
-              <p className="xl:w-[485px] 2xl:w-[500px] text-[hsla(0,0%,100%,.7)]">
-                {edu.content}
+              <p className="pr-12 xl:w-[485px] 2xl:w-[500px] text-[hsla(0,0%,100%,.7)]">
+                {exp.content}
               </p>
             </div>
           ))}

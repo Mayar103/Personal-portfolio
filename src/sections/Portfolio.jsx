@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { BsGithub } from "react-icons/bs";
 import { FiFigma } from "react-icons/fi";
@@ -7,7 +7,7 @@ function Portfolio() {
   const [showModal, setShowModal] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
   const [activeTab, setActiveTab] = useState(0);
-  const [tabs, setTabs] = useState([
+  const tabs =[
     {
       id: 0,
       title: "All",
@@ -24,8 +24,13 @@ function Portfolio() {
       id: 3,
       title: "UI",
     },
-  ]);
-  const [items, setItems] = useState([
+    {
+      id: 4,
+      title: "Next.JS"
+    }
+  ];
+
+  const items=[
     {
       id: 1,
       name: "Greentopia",
@@ -98,7 +103,19 @@ function Portfolio() {
       figma:
         "https://www.figma.com/proto/VsjfnYy0ZpEcOceGwcD0Av/VD---ITI43?node-id=947-9776&starting-point-node-id=947%3A9776&scaling=scale-down&show-proto-sidebar=1&t=4AEvTsV6fFx4auqs-1",
     },
-  ]);
+    {
+      id: 7,
+      name: "X-O Game",
+      img: "Images/x-o_game.png",
+      cat: "personal",
+      time: "April 2025",
+      technologies: "React, Next.Js, CSS",
+      tab: 4,
+      content:
+        "Performing a popular game called X-O, aka Tic Tac Toe.",
+      github: "https://github.com/Mayar103/X_O-Game",
+    },
+  ];
 
   //Filter
   const dataToRender =
@@ -178,24 +195,22 @@ function Portfolio() {
             <div className="flex min-[280px]:flex-col md:flex-row justify-evenly items-center gap-8 mt-2">
               <img
                 src={selectedItem.img}
-                className="min-[280px]:w-[180px] min-[280px]:h-[140px] sm:w-[280px] md:w-[250px] md:h-[260px] lg:w-[350px] h-[290px]"
+                className="min-[280px]:w-[180px] min-[280px]:h-[140px] sm:w-[280px] md:w-[250px] md:h-[260px] lg:w-[320px] h-[290px]"
               />
               <div className="flex flex-col">
                 <h3 className="min-[280px]:text-md md:text-lg font-semibold mb-2 text-white">
                   Project info:
                 </h3>
-                <p className="text-[#fff]">{selectedItem.content}</p>
+                <p className="text-hsla(0,0%,100%,.7)">{selectedItem.content}</p>
                 <h3 className="min-[280px]:text-md md:text-lg font-semibold mb-2 mt-4 text-white">
                   Project details:
                 </h3>
-                <p className="text-[#fff]">
-                  <span className="text-white mt-2 text-white">
-                    Technologies:
-                  </span>{" "}
-                  {selectedItem.technologies}
+                <p>
+                  <span className="text-white mt-2">Technologies:</span> {selectedItem.technologies}
+                  
                 </p>
                 <div className="divider mt-1 mb-1"></div>
-                <p className="text-[#fff]">
+                <p>
                   <span className="text-white ">Time:</span> {selectedItem.time}
                 </p>
                 <div className="divider mt-1 mb-1"></div>
@@ -203,14 +218,14 @@ function Portfolio() {
                   {selectedItem.id === 6 ? (
                     <div className="flex items-center gap-2">
                       <span className="text-white">Figma:</span>
-                      <a href={selectedItem.figma} target="_blank">
+                      <a href={selectedItem.figma} target="_blank" rel="noreferrer">
                         <FiFigma className="text-[#20c997] text-lg cursor-pointer" />
                       </a>
                     </div>
                   ) : (
                     <div className="flex items-center gap-2">
-                      <span className="text-white">Github:</span>{" "}
-                      <a href={selectedItem.github} target="_blank">
+                      <span className="text-white">Github:</span>
+                      <a href={selectedItem.github} target="_blank" rel="noreferrer">
                         <BsGithub className="text-[#20c997] text-lg cursor-pointer" />
                       </a>
                     </div>

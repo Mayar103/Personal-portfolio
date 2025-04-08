@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
@@ -54,11 +54,6 @@ const SideMenu = () => {
 
   const toggleButton = () => {
     setToggle(!toggle);
-    console.log("hello");
-  };
-
-  const makeFalse = () => {
-    console.log(false);
   };
 
   return (
@@ -72,7 +67,7 @@ const SideMenu = () => {
         </div>
         <div className="min-[280px]:flex min-[280px]:flex-row min-[280px]:justify-between lg:flex-col md:justify-evenly md:items-center">
           <h1 className="text-white font-semibold lg:text-[16px] xl:text-[20px] min-[280px]:ml-[10px] sm:ml-[30px] md:ml-[40px] lg:ml-0 md:mr-[120px] lg:mr-0">
-            Mayar Mohamed
+            Mayar Hassan
           </h1>
           <ul className="menu min-[280px]:flex-row lg:flex-col lg:gap-[8px] lg:mt-[60px] lg:mr-[70px] min-[180px]:hidden md:flex">
             <li
@@ -145,20 +140,6 @@ const SideMenu = () => {
                 Portfolio
               </Link>
             </li>
-            {/* <li
-            className={`w-[30px] md:ml-[20px] $ lg:ml-0 {
-              activeSection === "contact" ? "text-[#20c997]" : ""
-            }`}
-          >
-            <Link
-              to="contact"
-              smooth={true}
-              duration={500}
-              className="font-semibold text-[18px] hover:text-[#20c997] hover:bg-transparent"
-            >
-              Contact
-            </Link>
-          </li> */}
           </ul>
           {toggle && (
             <ul className="absolute top-[60px] w-[100vw] h-[200px] bg-[#121212] text-[hsla(0,0%,100%,.7)]">
@@ -255,15 +236,16 @@ const SideMenu = () => {
           </button>
         </div>
         <div className="items-center gap-4 sm:mt-0 lg:mt-20 xl:mt-44 min-[280px]:hidden lg:flex">
-          <a href="mailto:mayarmohamed775@gmail.com" target="_blank">
+          <a href="mailto:mayarmohamed775@gmail.com" target="_blank" rel="noreferrer">
             <MdEmail className="text-[#20c997] text-2xl cursor-pointer" />
           </a>
-          <a href="https://github.com/Mayar103" target="_blank">
+          <a href="https://github.com/Mayar103" target="_blank" rel="noreferrer">
             <BsGithub className="text-[#20c997] text-lg cursor-pointer" />
           </a>
           <a
             href="https://www.linkedin.com/in/mayar-mohamed-362b99168/"
             target="_blank"
+            rel="noreferrer"
           >
             <BsLinkedin className="text-[#20c997] text-lg cursor-pointer" />
           </a>

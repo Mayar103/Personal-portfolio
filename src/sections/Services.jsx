@@ -7,23 +7,23 @@ function Services() {
   const services = [
     {
       id: 1,
-      name: "UI/UX",
-      description:
-        "It involves designing layouts, color schemes, icons, typography, buttons, and other visual elements to create the look and feel of the product. ",
-      icon: <FaPencilRuler />,
-    },
-    {
-      id: 2,
       name: "Web development",
       description:
         "It involves technical skills to build interactive and functional online experiences through various programming languages and frameworks. ",
       icon: <CgScreen />,
     },
     {
-      id: 3,
-      name: "Writing",
+      id: 2,
+      name: "UI/UX",
       description:
-        "Content writers are skilled in crafting engaging, informative, and persuasive content that resonates with the target audience and fulfills specific objectives.",
+        "It involves designing layouts, color schemes, icons, typography, buttons, and other visual elements to create the look and feel of the product. ",
+      icon: <FaPencilRuler />,
+    },
+    {
+      id: 3,
+      name: "Content writing",
+      description:
+        "Content writers are skilled in crafting engaging, informative, and persuasive content that resonates with the target audience and fulfills their objectives.",
       icon: <TbWritingSign />,
     },
     {

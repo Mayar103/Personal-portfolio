@@ -1,4 +1,4 @@
-import cv from "../../public/Images/Mayar Mohamed Meshabet.pdf";
+import cv from "../../public/Images/Mayar Hassan's resume.pdf";
 
 function About() {
   return (
@@ -15,26 +15,20 @@ function About() {
         <div className="flex min-[280px]:flex-col lg:flex-row xl:justify-evenly xl:gap-[50px] mt-[50px] mb-[80px]">
           <div className="min-[280px]:w-[270px] min-[450px]:w-[350px] sm:w-[80vw] lg:w-[40vw] min-[280px]:m-auto min-[280px]:text-center lg:text-left">
             <h2 className="mb-[15px] text-white text-2xl font-bold">
-              I'm <span className="text-[#20c997]">Mayar Mohamed</span>, a Web
+              I am <span className="text-[#20c997]">Mayar Hassan</span>, a Web
               Developer
             </h2>
             <p className="mb-[18px] leading-8 min-[280px]:text:md text-[hsla(0,0%,100%,.7)]">
-              I can help you build a website for your business at an affordable
-              price. You can choose the functionalities you want to apply in
-              your project. It's fine if you have a specific template to be
-              implemented in the progict. You can also choose major colors and
-              images of the whole website to fit your major point.
+              I specialize in building custom websites at affordable prices, offering full flexibility on the features you want to implement. Whether you are looking for a specific template or have a unique vision for your project, I can bring it to life. I also provide the option to choose major colors, images, and overall design elements to align with your brand or personal style.
             </p>
             <p className="leading-8 min-[280px]:text:md text-[hsla(0,0%,100%,.7)]">
-              I can also help you build UI design that reflects visually
-              appealing interfaces in the field you choose, having priviledge of
-              new techniques and trendy looking websites.
+            I am passionate about creating visually appealing user interfaces that reflect modern design trends and new techniques. My focus is on creating websites that are not only functional but also visually engaging and user-friendly. 
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-1 min-[280px]:w-[270px] min-[450px]:w-[350px] sm:w-[40vw] min-[280px]:m-auto md:w-[70vw] lg:w-[20vw] lg:mr-[90px] min-[280px]:mt-[60px] lg:mt-0">
             <div className="flex gap-[5px] md:mb-[1rem] lg:mb-0">
               <h3 className="text-white text-base font-semibold">Name:</h3>
-              <p className="text-[hsla(0,0%,100%,.7)]">Mayar Mohamed</p>
+              <p className="text-[hsla(0,0%,100%,.7)]">Mayar Hassan</p>
             </div>
             <div className="divider mb-[0.5rem] md:hidden lg:flex"></div>
             <div className="flex gap-[5px]">
@@ -49,7 +43,7 @@ function About() {
             <div className="divider mt-[0.5rem] mb-[0.5rem] md:hidden lg:flex"></div>
             <div className="flex gap-[5px]">
               <h3 className="text-white text-base font-semibold">Age:</h3>
-              <p className="text-[hsla(0,0%,100%,.7)]">24</p>
+              <p className="text-[hsla(0,0%,100%,.7)]">26</p>
             </div>
             <div className="divider mt-[0.5rem] mb-[0.5rem] md:hidden lg:flex"></div>
             <div className="flex gap-[5px] mb-[28px]">
