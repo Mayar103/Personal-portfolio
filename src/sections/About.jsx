@@ -1,4 +1,4 @@
-import cv from "../../public/Images/Mayar Hassan's resume.pdf";
+import cv from "../../public/Images/Mayar Hassan Resume.pdf";
 
 function About() {
   return (
@@ -39,11 +39,6 @@ function About() {
               >
                 mayarmohamed775@gmail.com
               </a>
-            </div>
-            <div className="divider mt-[0.5rem] mb-[0.5rem] md:hidden lg:flex"></div>
-            <div className="flex gap-[5px]">
-              <h3 className="text-white text-base font-semibold">Age:</h3>
-              <p className="text-[hsla(0,0%,100%,.7)]">26</p>
             </div>
             <div className="divider mt-[0.5rem] mb-[0.5rem] md:hidden lg:flex"></div>
             <div className="flex gap-[5px] mb-[28px]">

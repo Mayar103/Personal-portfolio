@@ -1,4 +1,4 @@
-import cv from "../../public/Images/Mayar Hassan's resume.pdf";
+import cv from "../../public/Images/Mayar Hassan Resume.pdf";
 import { FaDownload } from "react-icons/fa";
 
 function Summary() {
